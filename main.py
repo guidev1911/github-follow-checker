@@ -40,8 +40,8 @@ nao_seguem_de_volta = following_names - followers_names
 print("\n===== NÃO SEGUEM DE VOLTA =====")
 
 if nao_seguem_de_volta:
-    for usuario in sorted(nao_seguem_de_volta):
-        print(f"@{usuario} - https://github.com/{usuario}")
+    for numero, usuario in enumerate(sorted(nao_seguem_de_volta), start=1):
+        print(f"{numero}. @{usuario} - https://github.com/{usuario}")
 else:
     print("Todos os usuários que você segue seguem você de volta!")
 
